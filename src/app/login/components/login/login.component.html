@@ -1,0 +1,39 @@
+<div class="row center-xs middle-xs">
+  <div class="col-xs-3">
+    <div class="box">
+      <mat-card>
+        <form>
+          <div class="row">
+            <div class="col-xs">
+              <h2>Login doctor</h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs">
+              <mat-form-field class="example-full-width">
+                <mat-label>User</mat-label>
+                <input matInput>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs">
+              <mat-form-field class="example-full-width">
+                <mat-label>Password</mat-label>
+                <input matInput [type]="hide ? 'password' : 'text'">
+                <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                  <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                </button>
+              </mat-form-field>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs">
+              <button mat-raised-button color="primary" class="example-full-width">Login</button>
+            </div>
+          </div>
+        </form>
+      </mat-card>
+    </div>
+  </div>
+</div>
