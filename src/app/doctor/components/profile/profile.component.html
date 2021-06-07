@@ -1,1 +1,30 @@
-<p>profile works!</p>
+<h1>Profile</h1>
+<div class="row center-xs middle-xs">
+  <div class="col-xs-8">
+    <div class="box">
+      <mat-card class="Profile">
+        <div class="Profile__picture">
+          <img class="Profile__image" src="https://www.cccd.edu/_assets/images/Departments/NoProfile.png" alt="Profile picture">
+        </div>
+        <div class="Profile__info">
+          <h2>{{'doctor Jozek Hajduk' | titlecase}}</h2>
+          <div class="Profile__info--work">
+            <h3>Work</h3>
+            <p>Santander Hospital</p>
+            <span>Bogota, Colombia</span>
+          </div>
+          <div class="Profile__info--speciality">
+            <h3>Specialty</h3>
+            <mat-chip-list class="example-chip" cdkDropList cdkDropListOrientation="horizontal" (cdkDropListDropped)="drop($event)">
+              <div class="list">
+                <mat-chip class="example-box" cdkDrag *ngFor="let vegetable of vegetables">
+                  {{vegetable.name}}
+                </mat-chip>
+              </div>
+            </mat-chip-list>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  </div>
+</div>
