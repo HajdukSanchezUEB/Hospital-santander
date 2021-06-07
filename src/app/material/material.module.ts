@@ -33,7 +33,7 @@ import { MatListModule } from '@angular/material/list';
     MatGridListModule,
     MatSidenavModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
   ]
 })
 export class MaterialModule { }
