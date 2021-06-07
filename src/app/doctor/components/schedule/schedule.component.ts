@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AgendaService, DayService, MonthAgendaService, MonthService, TimelineMonthService, TimelineViewsService, WeekService, WorkWeekService } from '@syncfusion/ej2-angular-schedule';
+import { AgendaService, DayService, MonthAgendaService, MonthService, TimelineMonthService, TimelineViewsService, View, WeekService, WorkWeekService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
   selector: 'app-schedule',
@@ -8,6 +8,8 @@ import { AgendaService, DayService, MonthAgendaService, MonthService, TimelineMo
   styleUrls: ['./schedule.component.scss'],
 })
 export class ScheduleComponent implements OnInit {
+
+  public currentView: View = 'Month';
 
   constructor() { }
 

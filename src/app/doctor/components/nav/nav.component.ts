@@ -14,9 +14,6 @@ export class NavComponent implements OnInit {
   userIcon = faUser;
   outIcon = faSignOutAlt;
 
-  // Show left menu
-  showFiller = false;
-
   constructor(
   ) { }
 

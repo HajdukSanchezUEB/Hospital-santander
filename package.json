@@ -28,6 +28,7 @@
     "@fortawesome/free-solid-svg-icons": "^5.15.3",
     "@syncfusion/ej2-angular-schedule": "^19.1.66",
     "@syncfusion/ej2-material-theme": "~19.1.65",
+    "flexboxgrid": "^6.3.1",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
