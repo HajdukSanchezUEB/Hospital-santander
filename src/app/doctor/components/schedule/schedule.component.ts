@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { AgendaService, DayService, MonthAgendaService, MonthService, TimelineMonthService, TimelineViewsService, View, WeekService, WorkWeekService } from '@syncfusion/ej2-angular-schedule';
+import { AgendaService, DayService, EventRenderedArgs, MonthAgendaService, MonthService, TimelineMonthService, TimelineViewsService, View, WeekService, WorkWeekService } from '@syncfusion/ej2-angular-schedule';
 
 @Component({
   selector: 'app-schedule',
@@ -14,6 +14,10 @@ export class ScheduleComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onEventRendered(args: EventRenderedArgs): void {
+    console.log(args.data);
   }
 
 }

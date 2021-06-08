@@ -9,6 +9,7 @@ import { ScheduleComponent } from './components/schedule/schedule.component';
 import { DoctorRoutingModule } from './doctor-routing.module';
 import { MaterialModule } from '../material/material.module';
 import { FawesomeModule } from '../fawesome/fawesome.module';
+import { LoaderModule } from '../loader/loader.module';
 import { ScheduleModule, RecurrenceEditorModule } from '@syncfusion/ej2-angular-schedule';
 
 @NgModule({
@@ -25,6 +26,7 @@ import { ScheduleModule, RecurrenceEditorModule } from '@syncfusion/ej2-angular-
     FawesomeModule,
     ScheduleModule,
     RecurrenceEditorModule,
+    LoaderModule
   ],
 })
 export class DoctorModule { }
