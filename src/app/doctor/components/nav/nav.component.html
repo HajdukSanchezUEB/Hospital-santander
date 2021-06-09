@@ -1,0 +1,44 @@
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+    <h2>Santander Hospital</h2>
+    <mat-list role="list">
+      <mat-list-item role="listitem">
+        <a [routerLink]="['/doctor']" mat-button class="link">
+          <fa-icon [icon]="calendarIcon"></fa-icon>
+          <span>Calendar</span>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item role="listitem">
+        <a [routerLink]="['/doctor/profile']" mat-button class="link">
+          <fa-icon [icon]="userIcon"></fa-icon>
+          <span>Profile</span>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+
+      <mat-list-item role="listitem">
+        <a [routerLink]="['/']" mat-button color="warn" class="link">
+          <fa-icon [icon]="outIcon"></fa-icon>
+          <span>Log Out</span>
+        </a>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+    </mat-list>
+  </mat-drawer>
+
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <span>Dr. Jozek Hajduk</span>
+  </mat-toolbar>
+
+  <!-- Router -->
+  <div class="components">
+    <router-outlet></router-outlet>
+  </div>
+
+</mat-drawer-container>

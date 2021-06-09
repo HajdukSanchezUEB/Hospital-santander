@@ -1,0 +1,21 @@
+.Profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  &__picture,
+  &__info {
+    width: 50%;
+  }
+
+  &__image {
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.list {
+  display: flex;
+  justify-content: center;
+}
